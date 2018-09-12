@@ -1,11 +1,11 @@
 sudo: required
 servies:
-  - docker
+  - dockertravis ci no green dot
 
 before_install:
-  - docker build -t jaredwmitchell/react-test -f Dockerfile.dev ./client
+  - docker build -t jaredwmitchell/react-test -f ./client/Dockerfile.dev ./client
 
-script:
+script:travis ci no green dot
   - docker run jaredwmitchell/react-test npm run test -- --coverage
 
 #build images
